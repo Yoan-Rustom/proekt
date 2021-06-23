@@ -1,4 +1,7 @@
 #include<iostream>
+#include <cstdlib>
+#include <ctime>
+#include <windows.h>
 
   using namespace std;
 
@@ -9,6 +12,7 @@
    char playerguess2;
    char playerguess3;
    int playerguess4;
+   int playerguess5;
    int right= 1;
   cout<<"HELLO AND WELCOME TO MY BOOK GAME WHERE YOU WILL TRY TO GET TO THE END USING YOUR BRAIN!!!"<<endl;
   cout<<""<<endl;
@@ -21,6 +25,39 @@
 
   cout<<"But anyways somehow now you are trapped in the spirit realm and you will have to choose the correct answers to get out."<<endl;
    cout<<"You have 2 lives."<<endl;
+   cout<<"But before the real game let s test your luck"<<endl;
+   cout<<"You are now in a loop and you should try to make mistakes to get out. It s all luck from now."<<endl;
+
+   while(right<5){
+        srand(time(0)); //seed random number generator
+    int comps = rand() % 3; // random number between 10 and 99
+      cout<<"There is a spirit in front of you what will you do? You either attack with 0, run with 1 or just try to talk with it with 2"<<endl;
+      cin>>playerguess5;
+   if(playerguess5==comps){
+
+   cout<<"No of course this wasn t right"<<endl;
+   right++;
+   }
+   else{
+    cout<<"A really good choice"<<endl;
+   }
+     cout<<"Now you see a shaking rabbit in front of you. Would you pick it up with 0, leave it with 1 or scare it away with 2."<<endl;
+     cin>>playerguess4;
+      srand(time(0)); //seed random number generator
+    int gang = rand() % 3; // random number between 10 and 99
+     if(playerguess4==gang)
+     {
+         cout<<"The rabbit beat you up"<<endl;
+         right++;
+     }
+     else{
+
+        cout<<"You made the right move"<<endl;
+     }
+
+   }
+   cout<<"You have now got out of my loop"<<endl;
+   cout<<"Let s start the real game now"<<endl;
   cout<<"In front of you there are three cups. The first one is wooden, the second one is golden and the third one is made of diamond."<<endl;
   cout<<"Which one will you drink from. Press one for wood, two for gold and three for diamond."<<endl;
   cin>>playerguess1;
@@ -42,8 +79,20 @@
             cout<<"Lives= 2"<<endl;
             cout<<"Tell me the element you are now in order to get out."<<endl;
             cin>>playerguess3;
-            if(playerguess3=='a'){
-                cout<<"You got it right too many times. You are too good for the human world you are staying with me."<<endl;
+            if(playerguess3=='air fire'||'fire air'){
+                cout<<"You got it right too many times. You are too good for the human world you won."<<endl;
+            Sleep(2000);
+            cout<<"You didn t just escape you also helped me with something"<<endl;
+            Sleep(2000);
+            cout<<"You helped me defeat my greatest enemy"<<endl;
+            Sleep(2000);
+            cout<<"For a thousand years I searched for someone that could help me"<<endl;
+            Sleep(2000);
+            cout<<"But I quickly understood that when I told them I needed help they wouldn t do anything"<<endl;
+            Sleep(2000);
+            cout<<" So I decided to put their own lives on the line"<<endl;
+            Sleep(2000);
+            cout<<"Thank you! You are now free. Go see your family and friends"<<endl;
             }
           else{
 
@@ -58,10 +107,22 @@
         cout<<"Lives= 1"<<endl;
         cout<<"Tell me the element you are now in order to get out."<<endl;
         cin>>playerguess3;
-        if(playerguess3=='a'){
+        if(playerguess3=='air fire'||'fire air'){
 
 
             cout<<"You are leaving me now. You won."<<endl;
+            Sleep(2000);
+            cout<<"You didn t just escape you also helped me with something"<<endl;
+            Sleep(2000);
+            cout<<"You helped me defeat my greatest enemy"<<endl;
+            Sleep(2000);
+            cout<<"For a thousand years I searched for someone that could help me"<<endl;
+            Sleep(2000);
+            cout<<"But I quickly understood that when I told them I needed help they wouldn t do anything"<<endl;
+            Sleep(2000);
+            cout<<" So I decided to put their own lives on the line"<<endl;
+            Sleep(2000);
+            cout<<"Thank you! You are now free. Go see your family and friends"<<endl;
         }
         else{
 
@@ -87,10 +148,22 @@
             cout<<"Lives= 1"<<endl;
             cout<<"Tell me the element you are now in order to get out."<<endl;
             cin>>playerguess3;
-            if(playerguess3=='a'){
+            if(playerguess3=='air fire'||'fire air'){
 
 
             cout<<"You are leaving me now. You won."<<endl;
+            Sleep(2000);
+            cout<<"You didn t just escape you also helped me with something"<<endl;
+            Sleep(2000);
+            cout<<"You helped me defeat my greatest enemy"<<endl;
+            Sleep(2000);
+            cout<<"For a thousand years I searched for someone that could help me"<<endl;
+            Sleep(2000);
+            cout<<"But I quickly understood that when I told them I needed help they wouldn t do anything"<<endl;
+            Sleep(2000);
+            cout<<" So I decided to put their own lives on the line"<<endl;
+            Sleep(2000);
+            cout<<"Thank you! You are now free. Go see your family and friends"<<endl;
         }
         else{
 
@@ -114,7 +187,3 @@
 
     return 0;
 }
-
-
-
-
